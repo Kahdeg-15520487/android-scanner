@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  coordinator:
+    image: ${DOCKER_REGISTRY-}coordinator
+    build:
+      context: .
+      dockerfile: ScannerCoordinator/Dockerfile
