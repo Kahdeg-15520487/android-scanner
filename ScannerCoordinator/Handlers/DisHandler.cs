@@ -42,6 +42,7 @@
 
         private IConnection InitConnection()
         {
+            Console.WriteLine(Configuration.GetSection("RabbitMq")["host"]);
             var factory = new ConnectionFactory()
             {
                 HostName = Configuration.GetSection("RabbitMq")["host"],
