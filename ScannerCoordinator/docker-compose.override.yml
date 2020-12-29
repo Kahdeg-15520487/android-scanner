@@ -3,7 +3,7 @@ version: '3.4'
 services:
   coordinator:
     environment:
-        - ASPNETCORE_ENVIRONMENT=Development
+        - ASPNETCORE_ENVIRONMENT=Docker
         - ASPNETCORE_URLS=http://+:5100;https://+:5101
         - ASPNETCORE_HTTPS_PORT=5101
         - DOTNET_USE_POLLING_FILE_WATCHER=1
